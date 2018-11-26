@@ -6,8 +6,9 @@ using UnityEngine.UI;
 
 public class PointController : MonoBehaviour
 {
-	public int pointTotal = 0;
+	private int pointTotal = 0;
 	public Text pointText;
+	private int totalScoredBalls = 0;
 	
 	void Update ()
 	{
@@ -15,7 +16,18 @@ public class PointController : MonoBehaviour
 
 		if (pointTotal >= 100)
 		{
-			SceneManager.LoadScene("Game Over Screen");
+			SceneManager.LoadScene("Winning Screen");
 		}
+
+		if (totalScoredBalls >= 10)
+		{
+			SceneManager.LoadScene("Losing Screen");
+		}
+	}
+	
+	public void IncreaseScore(int amount)
+	{
+		pointTotal += amount;
+		totalScoredBalls++;
 	}
 }

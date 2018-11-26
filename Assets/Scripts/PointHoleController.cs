@@ -10,6 +10,6 @@ public class PointHoleController : MonoBehaviour
 	
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		pointController.pointTotal += myValue;
+		pointController.IncreaseScore(myValue);
 	}
 }
