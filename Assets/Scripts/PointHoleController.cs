@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PointHoleController : MonoBehaviour
 {
-
 	public PointController pointController;
 	public int myValue;
 	

@@ -6,10 +6,9 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="DropZoneController.cs" t="Include" />
+          <e p="LevelLoader.cs" t="Include" />
           <e p="PointController.cs" t="Include" />
           <e p="PointHoleController.cs" t="Include" />
-          <e p="ReturnToTitleScreen.cs" t="Include" />
-          <e p="StartGameScript.cs" t="Include" />
         </e>
       </e>
       <e p="CodeLab0-Score-And-Scenes.sln" t="IncludeFlat" />

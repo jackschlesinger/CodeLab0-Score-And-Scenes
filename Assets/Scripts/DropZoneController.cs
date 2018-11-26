@@ -13,8 +13,6 @@ public class DropZoneController : MonoBehaviour {
 	
 	void OnMouseDown()
 	{
-		Debug.Log("Clicked.");
-
 		var ball = Instantiate(ballPrefab);
 		var ballPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 		ballPosition.z = 0.0f;

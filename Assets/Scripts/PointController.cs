@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 public class PointController : MonoBehaviour
 {
-	private int pointTotal = 0;
 	public Text pointText;
-	private int totalScoredBalls = 0;
+	
+	int pointTotal = 0;
+	int totalScoredBalls = 0;
 	
 	void Update ()
 	{
